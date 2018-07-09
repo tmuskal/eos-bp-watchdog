@@ -2,6 +2,11 @@
 Script for automatically unregistering a block producer when it stops producing
 
 
+## Requirements:
+
+- cleos
+- jq
+
 ## To setup
 1. create key for the watchdog permissions:
 
