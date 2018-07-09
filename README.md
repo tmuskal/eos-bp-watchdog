@@ -8,7 +8,7 @@ Script for automatically unregistering a block producer when it stops producing
 - jq
 
 ## First time setup
-1. create key for the watchdog permissions:
+1. Create key for the watchdog permissions:
 
 ```
 cleos create key
@@ -47,7 +47,7 @@ cleos wallet create -n watchdog
 ```
 cleos wallet import YOUR_PRIVATE_KEY -n watchdog
 ```
-4. edit the PRODUCERACCT and PASS variables in watchdog.sh
+4. Modify the PRODUCERACCT and PASS variables inside `watchdog.sh`
 ## Run
 
 ```
