@@ -48,3 +48,9 @@ cleos wallet import YOUR_PRIVATE_KEY -n watchdog
 ```
 ./watchdog.sh yourbp PWyourpasswordyourpasswordyourpasswordyourpassword
 ```
+
+
+## Contributors
+
+- [LiquidEOS](https://liquideos.com/)
+
