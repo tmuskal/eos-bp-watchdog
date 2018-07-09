@@ -1,6 +1,6 @@
 #! /bin/bash
-PRODUCERACCT=yourbp
-PASS=PWyourpasswordyourpasswordyourpasswordyourpassword
+PRODUCERACCT=$1
+PASS=$2
 
 LAST_UNPAID_BLOCKS=0
 LAST_DATE=`date +%s`
