@@ -30,7 +30,7 @@ cleos set action permission $PRODUCERACCT eosio unregprod watchdog
 
 ```
 
-3. Create wallet for watchdog
+3. Create wallet for the watchdog permissions
 
 ```
 cleos wallet create -n watchdog
@@ -42,7 +42,7 @@ cleos wallet create -n watchdog
 
 > "PWyourpasswordyourpasswordyourpasswordyourpassword"
 
-3. Import key for watchdog
+3. Import key for the watchdog permissions
 
 ```
 cleos wallet import YOUR_PRIVATE_KEY -n watchdog
