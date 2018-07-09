@@ -12,14 +12,14 @@ cleos create key
 
 > Private key: YOUR_PRIVATE_KEY
 
-> Public key: YOUR_PUBLIB_KEY
+> Public key: YOUR_PUBLIC_KEY
 
 2. Grant watchdog permissions
   
 ```
 PRODUCERACCT=yourbp
 
-cleos set account permission $PRODUCERACCT watchdog '{"threshold":1,"keys":[{"key":"YOUR_PUBLIB_KEY","weight":1}]}' "active" -p $PRODUCERACCT@active
+cleos set account permission $PRODUCERACCT watchdog '{"threshold":1,"keys":[{"key":"YOUR_PUBLIC_KEY","weight":1}]}' "active" -p $PRODUCERACCT@active
 
 cleos set action permission $PRODUCERACCT eosio unregprod watchdog
 
