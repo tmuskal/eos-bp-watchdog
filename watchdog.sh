@@ -11,7 +11,7 @@ API=http://nodes.get-scatter.com
 
 while true;
 do
-        UNPAID_BLOCKS=`curl "$API/v1/chain/get_table_rows" --stderr /dev/null  --data-binary '{"json":true,"scope":"eosio","code":"eosio","table":"producers","limit":5000}' | jq -e '.rows' | jq -c 'sort_by(-(.total_votes|tonumber))' | jq '[limit(21;.[])]' | jq --arg prd "$PRODUCERACCT" '.[] | select(.owner == $prd)' | jq -r '.unpaid_blocks'`
+        UNPAID_BLOCKS=`curl "$API/v1/chain/get_producers" --stderr /dev/null  --data-binary '{"json":true,"limit":21}' | jq -e '.rows' | jq --arg prd "$PRODUCERACCT" '.[] | select(.owner == $prd)' | jq -r '.unpaid_blocks'`
         if [ "$UNPAID_BLOCKS" == "" ]
         then
                 echo "not in top 21. sleeping"
